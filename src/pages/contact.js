@@ -17,7 +17,10 @@ const  ContactPage  =  ()  => (
             padding: `0 1.0875rem 1.45rem`,
             }}
         >
-            <section className="page-section bg-light">
+            <section className="page-section bg-light" style={{
+                    padding: `0 1.0875rem 1.45rem`,
+                    minHeight: '530px'
+                }}>
                 <h1 className="text-center uppercase">Contact</h1>
 
                 <div style={{

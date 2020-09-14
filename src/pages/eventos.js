@@ -14,11 +14,12 @@ const EventosPage = () => (
             padding: `0 1.0875rem 1.45rem`,
         }}
     >
-    <h1 className="text-center uppercase">Eventos</h1>
+    
         <section className="page-section bg-light">
+        <h1 className="text-center uppercase">Eventos</h1>
             <div className="container">
             <CardColumns>
-            <Card>
+                <Card>
                     <Card.Img variant="top" src="https://andro4all.com/files/2020/03/evento-cancelado.jpg" />
                     <Card.Body>
                         <Card.Title>Card title</Card.Title>

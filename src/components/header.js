@@ -2,6 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Navbar, Nav, Container } from "react-bootstrap"
 
+import imagen from '../images/gatsby-icon.png'
+
 const Header = ({ siteTitle }) => (
   <header  >
     <Container>
@@ -9,7 +11,7 @@ const Header = ({ siteTitle }) => (
         <Navbar.Brand href="#home">
           <img
             alt=""
-            src="../images/gatsby-icon.png"
+            src={imagen}
             width="30"
             height="30"
             className="d-inline-block align-top"

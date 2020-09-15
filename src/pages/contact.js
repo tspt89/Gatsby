@@ -26,28 +26,29 @@ const  ContactPage  =  ()  => (
                 <div style={{
                     padding: `0 1.0875rem 1.45rem`,
                 }}>
-                    <Form >
+                    <Form id="contactForm">
                         <Row>
                             <Col>
                                 <Form.Label>First Name</Form.Label>
-                                <Form.Control placeholder="First name" />
+                                <Form.Control type="text" placeholder="First name" id="name" required/>
                             </Col>
                             <Col>
                                 <Form.Label>Last Name</Form.Label>
-                                <Form.Control placeholder="Last name" />
+                                <Form.Control type="text" placeholder="Last name" id="last" required />
                             </Col>
                         </Row>
                         <Form.Group controlId="exampleForm.ControlInput1">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="name@example.com" />
+                            <Form.Control type="email" id="email" placeholder="name@example.com" required/>
                         </Form.Group>
                         <Form.Group controlId="exampleForm.ControlInput1">
                             <Form.Label>Telephone</Form.Label>
-                            <Form.Control placeholder="+52 (222) 123456789" />
+                            <Form.Control placeholder="+52 (222) 123456789" id="cel" required/>
                         </Form.Group>
-                        <Button variant="secondary" type="submit">
+                        <Button variant="outline-secondary" id="form-submit" type="submit" size="lg" block>
                             Send
                         </Button>
+                        <div id="msgSubmit" className="h3 text-center hidden"></div>
                     </Form>
                 </div>
             </section>

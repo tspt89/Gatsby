@@ -33,26 +33,9 @@ module.exports = {
         apiKey: `keymmqH25Z3K81vHH`,
         tables: [
           {
-            baseId: `appfqkJzvggRqdGqh`,
-            tableName: "Schedule",
-            tableLinks: ["Locations"],
-            tableLinks:["Topics"],
-            tableLinks:["SpeakersAttendance"],
-            tableLinks:["Staff"],
-            tableLinks:["Sponsors"],
-            tableLinks:["Budget"],
-          },
-          {
-            baseId: `appfqkJzvggRqdGqh`,
-            tableName: "Locations",
-          },
-          {
-            baseId: `appfqkJzvggRqdGqh`,
-            tableName: "Topics",
-          },
-          {
-            baseId: `appfqkJzvggRqdGqh`,
-            tableName: "SpeakersAttendance",
+            baseId: `appyCn5upjUHFvOjb`,
+            tableName: "Events",
+            
           },
         ]
       }

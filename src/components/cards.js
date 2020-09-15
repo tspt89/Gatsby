@@ -37,8 +37,9 @@ const Cards = () => {
                 </Card.Body>
                 <Card.Footer>
                     <small className="text-muted">
-                    {item.node.data.Date} <br/>
-                    <Countdown date={item.node.data.Date}/>
+                        <strong> {item.node.data.Date}</strong> 
+                        <br/>
+                        <Countdown date={item.node.data.Date}/>
                     </small>
                 </Card.Footer>
             </Card>

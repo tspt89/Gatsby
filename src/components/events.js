@@ -1,12 +1,12 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { Button, Card, CardColumns } from "react-bootstrap";
+import {Card, CardColumns } from "react-bootstrap";
 import Countdown from 'react-countdown';
 
-const Cards = () => {
+const Events = () => {
     const data = useStaticQuery(graphql`
         {
-            Events: allAirtable(sort: {fields: data___Date, order: ASC}, limit: 6) {
+            Events: allAirtable(sort: {fields: data___Date, order: ASC}) {
                 edges {
                     node {
                         data {
@@ -33,10 +33,9 @@ const Cards = () => {
                     <Card.Text>
                     {item.node.data.Description}
                     </Card.Text>
-                    <Button variant="outline-secondary" href="/eventos">Go</Button>
                 </Card.Body>
                 <Card.Footer>
-                    <small className="text-muted">
+                <small className="text-muted">
                     {item.node.data.Date} <br/>
                     <Countdown date={item.node.data.Date}/>
                     </small>
@@ -47,5 +46,4 @@ const Cards = () => {
     );
 };
 
-export default Cards
-
+export default Events

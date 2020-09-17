@@ -1,7 +1,8 @@
 <?php
 $name = $_POST["name"];
+$last= $_POST["last"];
 $email = $_POST["email"];
-$message = $_POST["message"];
+$cel= $_POST["cel"];
 
 $EmailTo = "yogo0607@gmail.com";
 $Subject = "New Message Received";
@@ -27,9 +28,13 @@ $success = mail($EmailTo, $Subject, $Body, "From:".$email);
 
 // redirect to success page
 if ($success){
-    echo "success";
+    // Set a 200 (okay) response code.
+    http_response_code(200);
+    echo "Thank You! Your message has been sent.";
 }else{
-    echo "invalid";
+    // Set a 500 (internal server error) response code.
+    http_response_code(500);
+    echo "Oops! Something went wrong and we couldn\"t send your message.";
 }
 
 ?>

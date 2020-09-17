@@ -16,7 +16,7 @@ const IndexPage = () => (
             <Container>
                 <div className="masthead-subheading">Welcome!</div>
                 <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a className="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="/about">About</a>
+                <a className="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="/contact">Contact</a>
             </Container>
     </header>
       

@@ -9,14 +9,13 @@ const  ContactPage  =  ()  => (
         <SEO title="Contact" />
         <div
             style={{
-            margin: `0 auto`,
+            margin: `3% auto`,
             maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
+            padding: `2% 0.25% 0.0025% ` ,
             }}
         >
             <section className="page-section bg-light" style={{
-                    padding: `0 1.0875rem 1.45rem`,
-                    minHeight: '530px'
+                    padding: `0 10% 18%`,
                 }}>
                 <h1 className="text-center uppercase">Contact</h1>
                     <FORM></FORM>

@@ -30,10 +30,10 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
-        apiKey: `keymmqH25Z3K81vHH`,
+        apiKey: `keyuckKOclYu6JDWf`,
         tables: [
           {
-            baseId: `appyCn5upjUHFvOjb`,
+            baseId: `appCQdEEzdT59Edyr`,
             tableName: "Events",
             
           },

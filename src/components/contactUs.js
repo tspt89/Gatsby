@@ -26,14 +26,14 @@ class ContactUs extends React.PureComponent{
         const templateParams = {
             from_name: name + " " + last,
             from_email: email,
-            to_name: 'Alma',
+            to_name: 'Elon Musk',
             message_html: cel,
         };
         emailjs.send(
-            'service_gmail',
-            'template_8ygs3sv',
+            'service_tfa8kea',
+            'template_beaqtw2',
             templateParams,
-            'user_nnFtaOQfa661JxEJuCedR'
+            'user_qx07GZBJtX83RY6mPKG1N'
         )
         this.resetForm();
         alert('Your message has been sent successfully. We will contact you soon.');
